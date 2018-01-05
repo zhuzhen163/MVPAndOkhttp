@@ -1,0 +1,13 @@
+<resources>
+
+    <!--
+         Customize dimensions originally defined in res/values/dimens.xml (such as
+         screen margins) for sw600dp devices (e.g. 7" tablets) here.
+    -->
+    <dimen name="my_account">214dp</dimen>
+    <dimen name="round_progressBar">170dp</dimen>
+    <dimen name="banner_height">180dp</dimen>
+    <!-- 优惠劵-->
+    <dimen name="conpon_limit_size">14sp</dimen>
+    <dimen name="conpon_bg_width">110dp</dimen>
+</resources>

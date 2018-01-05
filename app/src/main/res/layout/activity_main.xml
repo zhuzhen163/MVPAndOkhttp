@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f5f7"
+    android:orientation="vertical">
+
+    <com.common.zhuz.widget.NoScrollViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e6e6e6" />
+
+    <RadioGroup
+        android:id="@+id/tabradios"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen45dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        >
+
+        <RadioButton
+            android:id="@+id/rb_first"
+            style="@style/radioButton"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:checked="true"
+            android:text="技术"
+            android:textColor="@drawable/radiobutton_text"
+            android:textSize="@dimen/dimen15dp" />
+
+        <RadioButton
+            android:padding="@dimen/dimen3dp"
+            android:id="@+id/rb_two"
+            style="@style/radioButton"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:text="福利"
+            android:textColor="@drawable/radiobutton_text"
+            android:textSize="@dimen/dimen15dp" />
+
+        <RadioButton
+            android:padding="@dimen/dimen3dp"
+            android:id="@+id/rb_three"
+            style="@style/radioButton"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:text="书籍"
+            android:textColor="@drawable/radiobutton_text"
+            android:textSize="@dimen/dimen15dp" />
+
+        <RadioButton
+            android:padding="@dimen/dimen3dp"
+            android:id="@+id/rb_four"
+            style="@style/radioButton"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:text="电影"
+            android:textColor="@drawable/radiobutton_text"
+            android:textSize="@dimen/dimen15dp" />
+    </RadioGroup>
+</LinearLayout>

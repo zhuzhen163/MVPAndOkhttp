@@ -1,0 +1,78 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="rotation_load_dialog" parent="@style/custom_dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="custom_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    </style>
+
+    <style name="radioButton">
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+    </style>
+
+    <style name="AVLoadingIndicatorView">
+        <item name="minWidth">48dip</item>
+        <item name="maxWidth">48dip</item>
+        <item name="minHeight">48dip</item>
+        <item name="maxHeight">48dip</item>
+        <item name="indicatorName">LineSpinFadeLoaderIndicator</item>
+    </style>
+
+    <style name="AVLoadingIndicatorView.Large">
+        <item name="minWidth">72dip</item>
+        <item name="maxWidth">72dip</item>
+        <item name="minHeight">72dip</item>
+        <item name="maxHeight">72dip</item>
+        <item name="indicatorName">LineSpinFadeLoaderIndicator</item>
+    </style>
+
+    <style name="AVLoadingIndicatorView.Small">
+        <item name="minWidth">36dip</item>
+        <item name="maxWidth">36dip</item>
+        <item name="minHeight">36dip</item>
+        <item name="maxHeight">36dip</item>
+        <item name="indicatorName">LineSpinFadeLoaderIndicator</item>
+    </style>
+
+    <!--查看大图页面，全屏显示-->
+    <style name="ViewBigPicTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorTheme</item>
+        <item name="colorPrimaryDark">@color/colorTheme</item>
+        <item name="colorAccent">@color/colorTheme</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="BottomSheet.StyleDialog" parent="BottomSheet.Dialog">
+        <item name="android:backgroundDimAmount">0.5</item>
+        <item name="android:windowAnimationStyle">@style/BottomSheet.Animation</item>
+        <item name="android:textColorPrimary">@color/colorTitle</item>
+        <item name="android:textColorSecondary">@color/colorSubtitle</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColorHint">#42ffffff</item>
+        <item name="bs_dialogBackground">@color/colorWhite</item>
+        <item name="bs_dividerColor">@color/colorLine</item>
+        <item name="bs_numColumns">5</item>
+        <item name="bs_listStyle">@style/BottomSheet.List</item>
+    </style>
+
+</resources>

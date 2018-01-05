@@ -1,0 +1,14 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.common.zhuz.module.xrecyclerview.XRecyclerView
+        android:id="@+id/xrv_android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarFadeDuration="1"
+        android:scrollbarSize="4dp"
+        android:scrollbarThumbVertical="@color/tabBackground"
+        android:scrollbars="vertical" />
+
+</RelativeLayout>

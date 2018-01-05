@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#ffffff</color>
+    <color name="f5">#F5F5F5</color>
+    <color name="text_4d">#4d4d4d</color>
+    <color name="text_80">#808080</color>
+    <color name="text_99">#999999</color>
+    <color name="text_66">#666666</color>
+    <color name="text_33">#333333</color>
+    <color name="line">#E9E9E9</color>
+    <color name="text_color_qz">#FB8923</color>
+    <color name="b2">#B2B2B2</color>
+    <color name="bg_se">#F0F0F0</color>
+    <color name="bf">#BFBFBF</color>
+    <color name="next">#FF721F</color>
+    <color name="no_click">#ffe191</color>
+    <color name="yellow_line">#FFE695</color>
+    <color name="black">#000000</color>
+    <color name="guest_bg">#80000000</color>
+    <color name="fe">#FEFEFE</color>
+    <color name="df">#DFDFDF</color>
+    <color name="enen">#ffbb93</color>
+    <color name="province_line_border">#C7C7C7</color>
+    <color name="aaaa">#f9a829</color>
+    <color name="transparency">#00000000</color>
+    <color name="text_orange">#FEB12D</color>
+    <color name="a6998ea">#6998ea</color>
+    <color name="aFF721F">#FF721F</color>
+
+    <color name="colorTheme">#6998ea</color>
+    <!--页面背景的颜色-->
+    <color name="colorPageBg">#f2f4f5</color>
+    <!--tab标签栏文字的颜色-->
+    <color name="colorTabText">#585858</color>
+    <!--正文文字颜色-->
+    <color name="colorContent">#ff333333</color>
+    <!--水波纹或5.0以下选择器颜色-->
+    <color name="tabBackground">#777D7D7D</color>
+    <!--item的水波纹颜色-->
+    <color name="itemBackground">#DD7D7D7D</color>
+    <!--item的5.0一下版本选择器颜色-->
+    <color name="itemLowBackground">#d9d9d9</color>
+    <!--透明色-->
+    <color name="colorTransparent">#00000000</color>
+    <!--半透明-->
+    <color name="colorBanTransparent">#11000000</color>
+    <!--首页item文字颜色-->
+    <color name="colorSubtitle">#999</color>
+    <!--选择分类按下颜色-->
+    <color name="colorChoosePress">#DDD</color>
+    <!--分割线-->
+    <color name="colorLine">#EBEBEB</color>
+    <color name="colorWhite">#ffffffff</color>
+    <color name="colorTitle">#666</color>
+    <!--没有水波纹效果的颜色选择器-->
+    <color name="colorItemBackground">#d9d9d9</color>
+</resources>
