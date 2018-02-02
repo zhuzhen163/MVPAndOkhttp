@@ -1,6 +1,7 @@
 package com.common.zhuz.adapter;
 
 import android.content.Context;
+import android.view.View;
 import android.view.animation.OvershootInterpolator;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -12,6 +13,7 @@ import com.common.zhuz.base.SuperViewHolder;
 import com.common.zhuz.entity.MoviesBean;
 import com.common.zhuz.tools.AppUtils;
 import com.common.zhuz.tools.ImgLoadUtil;
+import com.common.zhuz.tools.SwitchActivityManager;
 import com.nineoldandroids.view.ViewHelper;
 import com.nineoldandroids.view.ViewPropertyAnimator;
 
@@ -46,7 +48,7 @@ public class MovieAdapter extends ListBaseAdapter<MoviesBean> {
         tv_one_rating_rate = holder.getView(R.id.tv_one_rating_rate);
         ll_one_item = holder.getView(R.id.ll_one_item);
 
-        MoviesBean moviesBean = mDataList.get(position);
+        final MoviesBean moviesBean = mDataList.get(position);
         ImgLoadUtil.displayEspImage(moviesBean.getImages().getLarge(), iv_one_photo, 1);
         tv_one_title.setText(moviesBean.getTitle());
         tv_one_directors.setText(AppUtils.formatName(moviesBean.getDirectors()));
@@ -59,5 +61,11 @@ public class MovieAdapter extends ListBaseAdapter<MoviesBean> {
         ViewPropertyAnimator.animate(ll_one_item).scaleX(1).setDuration(350).setInterpolator(new OvershootInterpolator()).start();
         ViewPropertyAnimator.animate(ll_one_item).scaleY(1).setDuration(350).setInterpolator(new OvershootInterpolator()).start();
 
+        ll_one_item.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                SwitchActivityManager.startMovieDetail(mContext,moviesBean);
+            }
+        });
     }
 }

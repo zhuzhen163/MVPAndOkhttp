@@ -65,6 +65,7 @@ public class DoubanTopActivity extends BaseActivity<DoubanTopActivityPresenter> 
         xrv_top.setLayoutManager(new StaggeredGridLayoutManager(3, StaggeredGridLayoutManager.VERTICAL));
         xrv_top.setAdapter(mDouBanTopAdapter);
         xrv_top.setPullRefreshEnabled(false);
+        xrv_top.clearHeader();
         xrv_top.setLoadingMoreEnabled(true);
     }
 

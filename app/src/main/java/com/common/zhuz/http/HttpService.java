@@ -4,6 +4,7 @@ import com.common.zhuz.base.BaseHttpResult;
 import com.common.zhuz.entity.BookBean;
 import com.common.zhuz.entity.GankIoDataBean;
 import com.common.zhuz.entity.HotMovieBean;
+import com.common.zhuz.entity.MovieDetailBean;
 import com.common.zhuz.entity.RaidersDataEntity;
 import com.common.zhuz.entity.VersionEntity;
 
@@ -71,4 +72,12 @@ public interface HttpService {
      */
     @GET("v2/movie/top250")
     Observable<HotMovieBean> getMovieTop250(@Query("start") int start, @Query("count") int count);
+
+    /**
+     * 获取电影详情
+     *
+     * @param id 电影bean里的id
+     */
+    @GET("v2/movie/subject/{id}")
+    Observable<MovieDetailBean> getMovieDetail(@Path("id") String id);
 }

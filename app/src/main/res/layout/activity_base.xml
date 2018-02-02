@@ -13,7 +13,7 @@
         <com.common.zhuz.widget.PublicTitleView
             android:id="@+id/base_title"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="@dimen/dimen40dp"/>
 
     </LinearLayout>
 </RelativeLayout>

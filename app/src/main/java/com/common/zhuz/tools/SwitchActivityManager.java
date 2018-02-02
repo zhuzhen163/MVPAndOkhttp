@@ -6,7 +6,9 @@ import android.content.Intent;
 
 import com.common.zhuz.R;
 import com.common.zhuz.activity.DoubanTopActivity;
+import com.common.zhuz.activity.MovieDetailActivity;
 import com.common.zhuz.activity.webview.WebViewActivity;
+import com.common.zhuz.entity.MoviesBean;
 
 /**
  * Created by zhuzhen on 2017/11/2.
@@ -14,6 +16,16 @@ import com.common.zhuz.activity.webview.WebViewActivity;
  */
 
 public class SwitchActivityManager {
+
+    /**
+     * @param context      activity
+     * @param positionData bean
+     */
+    public static void startMovieDetail(Context context, MoviesBean positionData) {
+        Intent intent = new Intent(context, MovieDetailActivity.class);
+        intent.putExtra("moviesBean", positionData);
+        context.startActivity(intent);
+    }
 
     /**
      * 打开网页:
